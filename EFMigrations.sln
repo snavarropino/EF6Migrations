@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomaticMigrations", "AutomaticMigrations\AutomaticMigrations.csproj", "{62E1EBCE-80BF-49A5-80BA-CF29F1CA7ED0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeMigrations", "CodeMigrations\CodeMigrations.csproj", "{CAD9BEC9-D1CB-4E4A-ABDC-F96369382347}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InitialCode", "InitialCode\InitialCode.csproj", "{FA3A00FC-56BE-401F-8FC6-D1CC28B37074}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeMigrationsAutomaticallyApplied", "CodeMigrationsAutomaticallyApplied\CodeMigrationsAutomaticallyApplied.csproj", "{805D777A-B34F-4116-B8D2-E90DE0B0763A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{62E1EBCE-80BF-49A5-80BA-CF29F1CA7ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62E1EBCE-80BF-49A5-80BA-CF29F1CA7ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62E1EBCE-80BF-49A5-80BA-CF29F1CA7ED0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAD9BEC9-D1CB-4E4A-ABDC-F96369382347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAD9BEC9-D1CB-4E4A-ABDC-F96369382347}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAD9BEC9-D1CB-4E4A-ABDC-F96369382347}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAD9BEC9-D1CB-4E4A-ABDC-F96369382347}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA3A00FC-56BE-401F-8FC6-D1CC28B37074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA3A00FC-56BE-401F-8FC6-D1CC28B37074}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA3A00FC-56BE-401F-8FC6-D1CC28B37074}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA3A00FC-56BE-401F-8FC6-D1CC28B37074}.Release|Any CPU.Build.0 = Release|Any CPU
+		{805D777A-B34F-4116-B8D2-E90DE0B0763A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{805D777A-B34F-4116-B8D2-E90DE0B0763A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{805D777A-B34F-4116-B8D2-E90DE0B0763A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{805D777A-B34F-4116-B8D2-E90DE0B0763A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

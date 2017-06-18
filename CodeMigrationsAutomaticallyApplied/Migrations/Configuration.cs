@@ -1,12 +1,24 @@
-﻿using System.Collections.Generic;
-using System.Data.Entity;
+using System.Collections.Generic;
 
-namespace AutomaticMigrations
+namespace CodeMigrationsAutomaticallyApplied.Migrations
 {
-    public class DatabaseInitializer: CreateDatabaseIfNotExists<SuperheroContext>
+    using System;
+    using System.Data.Entity;
+    using System.Data.Entity.Migrations;
+    using System.Linq;
+
+    internal sealed class Configuration : DbMigrationsConfiguration<CodeMigrationsAutomaticallyApplied.SuperheroContext>
     {
-        protected override void Seed(SuperheroContext context)
+        public Configuration()
         {
+            AutomaticMigrationsEnabled = false;
+            ContextKey = "CodeMigrationsAutomaticallyApplied.SuperheroContext";
+        }
+
+        protected override void Seed(CodeMigrationsAutomaticallyApplied.SuperheroContext context)
+        {
+            if (context.Superheros.Any())
+                return;
             // Seed code here
             var superman = new Superhero()
             {
@@ -29,8 +41,9 @@ namespace AutomaticMigrations
                 Name = "Memto"
             };
 
+
             context.Superheros.AddRange(new List<Superhero>() { superman, memto });
             context.SaveChanges();
         }
     }
-  }
+}

@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace AutomaticMigrations
+namespace InitialCode
 {
     public class Superhero
     {
@@ -9,14 +10,14 @@ namespace AutomaticMigrations
         {
             SecretIdentities = new List<SecretIdentity>();
         }
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public bool IsDcSuperhero { get; set; }
+        public int Id { get; set; }        
+        public string Name { get; set; }         
         public virtual List<SecretIdentity> SecretIdentities { get; set; }
 
         public override string ToString()
         {
-            var sb = new StringBuilder($"Id={Id} Name={Name} IsDcSuperhero={IsDcSuperhero}{System.Environment.NewLine}");
+            var sb = new StringBuilder($"Id={Id} Name={Name} {System.Environment.NewLine}");
+            
             foreach(var secretIdentity in SecretIdentities)
             {
                 sb.AppendLine(secretIdentity.ToString());

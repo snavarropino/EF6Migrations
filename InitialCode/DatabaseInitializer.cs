@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Data.Entity;
 
-namespace AutomaticMigrations
+namespace InitialCode
 {
-    public class DatabaseInitializer: CreateDatabaseIfNotExists<SuperheroContext>
+    class DatabaseInitializer : CreateDatabaseIfNotExists<SuperheroContext>
     {
         protected override void Seed(SuperheroContext context)
         {
@@ -29,8 +29,9 @@ namespace AutomaticMigrations
                 Name = "Memto"
             };
 
+
             context.Superheros.AddRange(new List<Superhero>() { superman, memto });
             context.SaveChanges();
         }
     }
-  }
+}
